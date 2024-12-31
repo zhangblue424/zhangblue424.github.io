@@ -1,0 +1,1388 @@
+<!-- saved from url=(0043)http://127.0.0.1:5501/blue/docs/index1.html -->
+<html lang="en" class=" js  js ">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script> document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js '; </script>
+  <!-- For all browsers -->
+  <link rel="stylesheet" href="./root/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta http-equiv="cleartype" content="on"> <!-- start custom head snippets -->
+  <title>Haiyang Zhang</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+    }
+    .poster {
+      flex: 1;
+      margin-right: -80px;
+    }
+    .poster-img {
+      max-width: 80%; /* 确保图片不会超出其容器 */
+      height: auto; /* 保持比例 */
+  }
+    .details {
+      flex: 1;
+      padding: 20px;
+      border-left: 1px solid #ccc;
+    }
+    .details h1 {
+      margin: 0;
+      font-size: 18px;
+    }
+    .details p {
+      margin: 10px 0;
+    }
+    .details a {
+      margin-top: 10px;
+    }
+  </style>
+  <!-- Support for MatJax -->
+  <script src="./root/polyfill.min.js.下载"></script>
+  <script id="MathJax-script" async=""
+    src="./root/tex-mml-chtml.js.下载"></script>
+  <!-- end custom head snippets -->
+  <style type="text/css">
+    .CtxtMenu_InfoClose {
+      top: .2em;
+      right: .2em;
+    }
+
+    .CtxtMenu_InfoContent {
+      overflow: auto;
+      text-align: left;
+      font-size: 80%;
+      padding: .4em .6em;
+      border: 1px inset;
+      margin: 1em 0px;
+      max-height: 20em;
+      max-width: 30em;
+      background-color: #EEEEEE;
+      white-space: normal;
+    }
+
+    .CtxtMenu_Info.CtxtMenu_MousePost {
+      outline: none;
+    }
+
+    .CtxtMenu_Info {
+      position: fixed;
+      left: 50%;
+      width: auto;
+      text-align: center;
+      border: 3px outset;
+      padding: 1em 2em;
+      background-color: #DDDDDD;
+      color: black;
+      cursor: default;
+      font-family: message-box;
+      font-size: 120%;
+      font-style: normal;
+      text-indent: 0;
+      text-transform: none;
+      line-height: normal;
+      letter-spacing: normal;
+      word-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      float: none;
+      z-index: 201;
+      border-radius: 15px;
+      /* Opera 10.5 and IE9 */
+      -webkit-border-radius: 15px;
+      /* Safari and Chrome */
+      -moz-border-radius: 15px;
+      /* Firefox */
+      -khtml-border-radius: 15px;
+      /* Konqueror */
+      box-shadow: 0px 10px 20px #808080;
+      /* Opera 10.5 and IE9 */
+      -webkit-box-shadow: 0px 10px 20px #808080;
+      /* Safari 3 & Chrome */
+      -moz-box-shadow: 0px 10px 20px #808080;
+      /* Forefox 3.5 */
+      -khtml-box-shadow: 0px 10px 20px #808080;
+      /* Konqueror */
+      filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color="gray", Positive="true");
+      /* IE */
+    }
+  </style>
+  <style type="text/css">
+    .CtxtMenu_MenuClose {
+      position: absolute;
+      cursor: pointer;
+      display: inline-block;
+      border: 2px solid #AAA;
+      border-radius: 18px;
+      -webkit-border-radius: 18px;
+      /* Safari and Chrome */
+      -moz-border-radius: 18px;
+      /* Firefox */
+      -khtml-border-radius: 18px;
+      /* Konqueror */
+      font-family: "Courier New", Courier;
+      font-size: 24px;
+      color: #F0F0F0
+    }
+
+    .CtxtMenu_MenuClose span {
+      display: block;
+      background-color: #AAA;
+      border: 1.5px solid;
+      border-radius: 18px;
+      -webkit-border-radius: 18px;
+      /* Safari and Chrome */
+      -moz-border-radius: 18px;
+      /* Firefox */
+      -khtml-border-radius: 18px;
+      /* Konqueror */
+      line-height: 0;
+      padding: 8px 0 6px
+        /* may need to be browser-specific */
+    }
+
+    .CtxtMenu_MenuClose:hover {
+      color: white !important;
+      border: 2px solid #CCC !important
+    }
+
+    .CtxtMenu_MenuClose:hover span {
+      background-color: #CCC !important
+    }
+
+    .CtxtMenu_MenuClose:hover:focus {
+      outline: none
+    }
+  </style>
+  <style type="text/css">
+    .CtxtMenu_Menu {
+      position: absolute;
+      background-color: white;
+      color: black;
+      width: auto;
+      padding: 5px 0px;
+      border: 1px solid #CCCCCC;
+      margin: 0;
+      cursor: default;
+      font: menu;
+      text-align: left;
+      text-indent: 0;
+      text-transform: none;
+      line-height: normal;
+      letter-spacing: normal;
+      word-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      float: none;
+      z-index: 201;
+      border-radius: 5px;
+      /* Opera 10.5 and IE9 */
+      -webkit-border-radius: 5px;
+      /* Safari and Chrome */
+      -moz-border-radius: 5px;
+      /* Firefox */
+      -khtml-border-radius: 5px;
+      /* Konqueror */
+      box-shadow: 0px 10px 20px #808080;
+      /* Opera 10.5 and IE9 */
+      -webkit-box-shadow: 0px 10px 20px #808080;
+      /* Safari 3 & Chrome */
+      -moz-box-shadow: 0px 10px 20px #808080;
+      /* Forefox 3.5 */
+      -khtml-box-shadow: 0px 10px 20px #808080;
+      /* Konqueror */
+    }
+
+    .CtxtMenu_MenuItem {
+      padding: 1px 2em;
+      background: transparent;
+    }
+
+    .CtxtMenu_MenuArrow {
+      position: absolute;
+      right: .5em;
+      padding-top: .25em;
+      color: #666666;
+      font-family: null;
+      font-size: .75em
+    }
+
+    .CtxtMenu_MenuActive .CtxtMenu_MenuArrow {
+      color: white
+    }
+
+    .CtxtMenu_MenuArrow.CtxtMenu_RTL {
+      left: .5em;
+      right: auto
+    }
+
+    .CtxtMenu_MenuCheck {
+      position: absolute;
+      left: .7em;
+      font-family: null
+    }
+
+    .CtxtMenu_MenuCheck.CtxtMenu_RTL {
+      right: .7em;
+      left: auto
+    }
+
+    .CtxtMenu_MenuRadioCheck {
+      position: absolute;
+      left: .7em;
+    }
+
+    .CtxtMenu_MenuRadioCheck.CtxtMenu_RTL {
+      right: .7em;
+      left: auto
+    }
+
+    .CtxtMenu_MenuInputBox {
+      padding-left: 1em;
+      right: .5em;
+      color: #666666;
+      font-family: null;
+    }
+
+    .CtxtMenu_MenuInputBox.CtxtMenu_RTL {
+      left: .1em;
+    }
+
+    .CtxtMenu_MenuComboBox {
+      left: .1em;
+      padding-bottom: .5em;
+    }
+
+    .CtxtMenu_MenuSlider {
+      left: .1em;
+    }
+
+    .CtxtMenu_SliderValue {
+      position: absolute;
+      right: .1em;
+      padding-top: .25em;
+      color: #333333;
+      font-size: .75em
+    }
+
+    .CtxtMenu_SliderBar {
+      outline: none;
+      background: #d3d3d3
+    }
+
+    .CtxtMenu_MenuLabel {
+      padding: 1px 2em 3px 1.33em;
+      font-style: italic
+    }
+
+    .CtxtMenu_MenuRule {
+      border-top: 1px solid #DDDDDD;
+      margin: 4px 3px;
+    }
+
+    .CtxtMenu_MenuDisabled {
+      color: GrayText
+    }
+
+    .CtxtMenu_MenuActive {
+      background-color: #606872;
+      color: white;
+    }
+
+    .CtxtMenu_MenuDisabled:focus {
+      background-color: #E8E8E8
+    }
+
+    .CtxtMenu_MenuLabel:focus {
+      background-color: #E8E8E8
+    }
+
+    .CtxtMenu_ContextMenu:focus {
+      outline: none
+    }
+
+    .CtxtMenu_ContextMenu .CtxtMenu_MenuItem:focus {
+      outline: none
+    }
+
+    .CtxtMenu_SelectionMenu {
+      position: relative;
+      float: left;
+      border-bottom: none;
+      -webkit-box-shadow: none;
+      -webkit-border-radius: 0px;
+    }
+
+    .CtxtMenu_SelectionItem {
+      padding-right: 1em;
+    }
+
+    .CtxtMenu_Selection {
+      right: 40%;
+      width: 50%;
+    }
+
+    .CtxtMenu_SelectionBox {
+      padding: 0em;
+      max-height: 20em;
+      max-width: none;
+      background-color: #FFFFFF;
+    }
+
+    .CtxtMenu_SelectionDivider {
+      clear: both;
+      border-top: 2px solid #000000;
+    }
+
+    .CtxtMenu_Menu .CtxtMenu_MenuClose {
+      top: -10px;
+      left: -10px
+    }
+  </style>
+  <style id="MJX-CHTML-styles">
+    mjx-container[jax="CHTML"] {
+      line-height: 0;
+    }
+
+    mjx-container [space="1"] {
+      margin-left: .111em;
+    }
+
+    mjx-container [space="2"] {
+      margin-left: .167em;
+    }
+
+    mjx-container [space="3"] {
+      margin-left: .222em;
+    }
+
+    mjx-container [space="4"] {
+      margin-left: .278em;
+    }
+
+    mjx-container [space="5"] {
+      margin-left: .333em;
+    }
+
+    mjx-container [rspace="1"] {
+      margin-right: .111em;
+    }
+
+    mjx-container [rspace="2"] {
+      margin-right: .167em;
+    }
+
+    mjx-container [rspace="3"] {
+      margin-right: .222em;
+    }
+
+    mjx-container [rspace="4"] {
+      margin-right: .278em;
+    }
+
+    mjx-container [rspace="5"] {
+      margin-right: .333em;
+    }
+
+    mjx-container [size="s"] {
+      font-size: 70.7%;
+    }
+
+    mjx-container [size="ss"] {
+      font-size: 50%;
+    }
+
+    mjx-container [size="Tn"] {
+      font-size: 60%;
+    }
+
+    mjx-container [size="sm"] {
+      font-size: 85%;
+    }
+
+    mjx-container [size="lg"] {
+      font-size: 120%;
+    }
+
+    mjx-container [size="Lg"] {
+      font-size: 144%;
+    }
+
+    mjx-container [size="LG"] {
+      font-size: 173%;
+    }
+
+    mjx-container [size="hg"] {
+      font-size: 207%;
+    }
+
+    mjx-container [size="HG"] {
+      font-size: 249%;
+    }
+
+    mjx-container [width="full"] {
+      width: 100%;
+    }
+
+    mjx-box {
+      display: inline-block;
+    }
+
+    mjx-block {
+      display: block;
+    }
+
+    mjx-itable {
+      display: inline-table;
+    }
+
+    mjx-row {
+      display: table-row;
+    }
+
+    mjx-row>* {
+      display: table-cell;
+    }
+
+    mjx-mtext {
+      display: inline-block;
+    }
+
+    mjx-mstyle {
+      display: inline-block;
+    }
+
+    mjx-merror {
+      display: inline-block;
+      color: red;
+      background-color: yellow;
+    }
+
+    mjx-mphantom {
+      visibility: hidden;
+    }
+
+    _::-webkit-full-page-media,
+    _:future,
+    :root mjx-container {
+      will-change: opacity;
+    }
+
+    mjx-assistive-mml {
+      position: absolute !important;
+      top: 0px;
+      left: 0px;
+      clip: rect(1px, 1px, 1px, 1px);
+      padding: 1px 0px 0px 0px !important;
+      border: 0px !important;
+      display: block !important;
+      width: auto !important;
+      overflow: hidden !important;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    mjx-assistive-mml[display="block"] {
+      width: 100% !important;
+    }
+
+    mjx-math {
+      display: inline-block;
+      text-align: left;
+      line-height: 0;
+      text-indent: 0;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 100%;
+      font-size-adjust: none;
+      letter-spacing: normal;
+      border-collapse: collapse;
+      word-wrap: normal;
+      word-spacing: normal;
+      white-space: nowrap;
+      direction: ltr;
+      padding: 1px 0;
+    }
+
+    mjx-container[jax="CHTML"][display="true"] {
+      display: block;
+      text-align: center;
+      margin: 1em 0;
+    }
+
+    mjx-container[jax="CHTML"][display="true"][width="full"] {
+      display: flex;
+    }
+
+    mjx-container[jax="CHTML"][display="true"] mjx-math {
+      padding: 0;
+    }
+
+    mjx-container[jax="CHTML"][justify="left"] {
+      text-align: left;
+    }
+
+    mjx-container[jax="CHTML"][justify="right"] {
+      text-align: right;
+    }
+
+    mjx-mi {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-c {
+      display: inline-block;
+    }
+
+    mjx-utext {
+      display: inline-block;
+      padding: .75em 0 .2em 0;
+    }
+
+    mjx-c::before {
+      display: block;
+      width: 0;
+    }
+
+    .MJX-TEX {
+      font-family: MJXZERO, MJXTEX;
+    }
+
+    .TEX-B {
+      font-family: MJXZERO, MJXTEX-B;
+    }
+
+    .TEX-I {
+      font-family: MJXZERO, MJXTEX-I;
+    }
+
+    .TEX-MI {
+      font-family: MJXZERO, MJXTEX-MI;
+    }
+
+    .TEX-BI {
+      font-family: MJXZERO, MJXTEX-BI;
+    }
+
+    .TEX-S1 {
+      font-family: MJXZERO, MJXTEX-S1;
+    }
+
+    .TEX-S2 {
+      font-family: MJXZERO, MJXTEX-S2;
+    }
+
+    .TEX-S3 {
+      font-family: MJXZERO, MJXTEX-S3;
+    }
+
+    .TEX-S4 {
+      font-family: MJXZERO, MJXTEX-S4;
+    }
+
+    .TEX-A {
+      font-family: MJXZERO, MJXTEX-A;
+    }
+
+    .TEX-C {
+      font-family: MJXZERO, MJXTEX-C;
+    }
+
+    .TEX-CB {
+      font-family: MJXZERO, MJXTEX-CB;
+    }
+
+    .TEX-FR {
+      font-family: MJXZERO, MJXTEX-FR;
+    }
+
+    .TEX-FRB {
+      font-family: MJXZERO, MJXTEX-FRB;
+    }
+
+    .TEX-SS {
+      font-family: MJXZERO, MJXTEX-SS;
+    }
+
+    .TEX-SSB {
+      font-family: MJXZERO, MJXTEX-SSB;
+    }
+
+    .TEX-SSI {
+      font-family: MJXZERO, MJXTEX-SSI;
+    }
+
+    .TEX-SC {
+      font-family: MJXZERO, MJXTEX-SC;
+    }
+
+    .TEX-T {
+      font-family: MJXZERO, MJXTEX-T;
+    }
+
+    .TEX-V {
+      font-family: MJXZERO, MJXTEX-V;
+    }
+
+    .TEX-VB {
+      font-family: MJXZERO, MJXTEX-VB;
+    }
+
+    mjx-stretchy-v mjx-c,
+    mjx-stretchy-h mjx-c {
+      font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
+    }
+
+    @font-face
+
+    /* 0 */
+      {
+      font-family: MJXZERO;
+      src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 1 */
+      {
+      font-family: MJXTEX;
+      src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 2 */
+      {
+      font-family: MJXTEX-B;
+      src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 3 */
+      {
+      font-family: MJXTEX-I;
+      src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 4 */
+      {
+      font-family: MJXTEX-MI;
+      src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 5 */
+      {
+      font-family: MJXTEX-BI;
+      src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 6 */
+      {
+      font-family: MJXTEX-S1;
+      src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 7 */
+      {
+      font-family: MJXTEX-S2;
+      src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 8 */
+      {
+      font-family: MJXTEX-S3;
+      src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 9 */
+      {
+      font-family: MJXTEX-S4;
+      src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 10 */
+      {
+      font-family: MJXTEX-A;
+      src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 11 */
+      {
+      font-family: MJXTEX-C;
+      src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 12 */
+      {
+      font-family: MJXTEX-CB;
+      src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 13 */
+      {
+      font-family: MJXTEX-FR;
+      src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 14 */
+      {
+      font-family: MJXTEX-FRB;
+      src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 15 */
+      {
+      font-family: MJXTEX-SS;
+      src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 16 */
+      {
+      font-family: MJXTEX-SSB;
+      src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 17 */
+      {
+      font-family: MJXTEX-SSI;
+      src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 18 */
+      {
+      font-family: MJXTEX-SC;
+      src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 19 */
+      {
+      font-family: MJXTEX-T;
+      src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 20 */
+      {
+      font-family: MJXTEX-V;
+      src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 21 */
+      {
+      font-family: MJXTEX-VB;
+      src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+    }
+
+    mjx-c.mjx-c1D45D.TEX-I::before {
+      padding: 0.442em 0.503em 0.194em 0;
+      content: "p";
+    }
+  </style>
+  <style id="fit-vids-style">
+    .fluid-width-video-wrapper {
+      width: 100%;
+      position: relative;
+      padding: 0;
+    }
+
+    .fluid-width-video-wrapper iframe,
+    .fluid-width-video-wrapper object,
+    .fluid-width-video-wrapper embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <style type="text/css">
+    #_copy {
+      align-items: center;
+      background: #4494d5;
+      border-radius: 3px;
+      color: #fff;
+      cursor: pointer;
+      display: flex;
+      font-size: 13px;
+      height: 30px;
+      justify-content: center;
+      position: absolute;
+      width: 60px;
+      z-index: 1000
+    }
+
+    #select-tooltip,
+    #sfModal,
+    .modal-backdrop,
+    div[id^=reader-helper] {
+      display: none !important
+    }
+
+    .modal-open {
+      overflow: auto !important
+    }
+
+    ._sf_adjust_body {
+      padding-right: 0 !important
+    }
+
+    .enable_copy_btns_div {
+      position: fixed;
+      width: 154px;
+      left: 10px;
+      top: 45%;
+      background: #e7f1ff;
+      border: 2px solid #4595d5;
+      font-weight: 600;
+      border-radius: 2px;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+      z-index: 5000
+    }
+
+    .enable_copy_btns_logo {
+      width: 100%;
+      background: #4595d5;
+      text-align: center;
+      font-size: 12px;
+      color: #e7f1ff;
+      line-height: 30px;
+      height: 30px
+    }
+
+    .enable_copy_btns_btn {
+      display: block;
+      width: 128px;
+      height: 28px;
+      background: #7f5711;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 12px;
+      border: 0;
+      outline: 0;
+      margin: 8px auto;
+      font-weight: 700;
+      cursor: pointer;
+      opacity: .9
+    }
+
+    .enable_copy_btns_btn:hover {
+      opacity: .8
+    }
+
+    .enable_copy_btns_btn:active {
+      opacity: 1
+    }
+  </style>
+  <style type="text/css">
+    #_copy {
+      align-items: center;
+      background: #4494d5;
+      border-radius: 3px;
+      color: #fff;
+      cursor: pointer;
+      display: flex;
+      font-size: 13px;
+      height: 30px;
+      justify-content: center;
+      position: absolute;
+      width: 60px;
+      z-index: 1000
+    }
+
+    #select-tooltip,
+    #sfModal,
+    .modal-backdrop,
+    div[id^=reader-helper] {
+      display: none !important
+    }
+
+    .modal-open {
+      overflow: auto !important
+    }
+
+    ._sf_adjust_body {
+      padding-right: 0 !important
+    }
+
+    .enable_copy_btns_div {
+      position: fixed;
+      width: 154px;
+      left: 10px;
+      top: 45%;
+      background: #e7f1ff;
+      border: 2px solid #4595d5;
+      font-weight: 600;
+      border-radius: 2px;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+      z-index: 5000
+    }
+
+    .enable_copy_btns_logo {
+      width: 100%;
+      background: #4595d5;
+      text-align: center;
+      font-size: 12px;
+      color: #e7f1ff;
+      line-height: 30px;
+      height: 30px
+    }
+
+    .enable_copy_btns_btn {
+      display: block;
+      width: 128px;
+      height: 28px;
+      background: #7f5711;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 12px;
+      border: 0;
+      outline: 0;
+      margin: 8px auto;
+      font-weight: 700;
+      cursor: pointer;
+      opacity: .9
+    }
+
+    .enable_copy_btns_btn:hover {
+      opacity: .8
+    }
+
+    .enable_copy_btns_btn:active {
+      opacity: 1
+    }
+  </style>
+  <style type="text/css">
+    .CtxtMenu_InfoClose {
+      top: .2em;
+      right: .2em;
+    }
+
+    .CtxtMenu_InfoContent {
+      overflow: auto;
+      text-align: left;
+      font-size: 80%;
+      padding: .4em .6em;
+      border: 1px inset;
+      margin: 1em 0px;
+      max-height: 20em;
+      max-width: 30em;
+      background-color: #EEEEEE;
+      white-space: normal;
+    }
+
+    .CtxtMenu_Info.CtxtMenu_MousePost {
+      outline: none;
+    }
+
+    .CtxtMenu_Info {
+      position: fixed;
+      left: 50%;
+      width: auto;
+      text-align: center;
+      border: 3px outset;
+      padding: 1em 2em;
+      background-color: #DDDDDD;
+      color: black;
+      cursor: default;
+      font-family: message-box;
+      font-size: 120%;
+      font-style: normal;
+      text-indent: 0;
+      text-transform: none;
+      line-height: normal;
+      letter-spacing: normal;
+      word-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      float: none;
+      z-index: 201;
+      border-radius: 15px;
+      /* Opera 10.5 and IE9 */
+      -webkit-border-radius: 15px;
+      /* Safari and Chrome */
+      -moz-border-radius: 15px;
+      /* Firefox */
+      -khtml-border-radius: 15px;
+      /* Konqueror */
+      box-shadow: 0px 10px 20px #808080;
+      /* Opera 10.5 and IE9 */
+      -webkit-box-shadow: 0px 10px 20px #808080;
+      /* Safari 3 & Chrome */
+      -moz-box-shadow: 0px 10px 20px #808080;
+      /* Forefox 3.5 */
+      -khtml-box-shadow: 0px 10px 20px #808080;
+      /* Konqueror */
+      filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color="gray", Positive="true");
+      /* IE */
+    }
+  </style>
+  <style type="text/css">
+    .CtxtMenu_MenuClose {
+      position: absolute;
+      cursor: pointer;
+      display: inline-block;
+      border: 2px solid #AAA;
+      border-radius: 18px;
+      -webkit-border-radius: 18px;
+      /* Safari and Chrome */
+      -moz-border-radius: 18px;
+      /* Firefox */
+      -khtml-border-radius: 18px;
+      /* Konqueror */
+      font-family: "Courier New", Courier;
+      font-size: 24px;
+      color: #F0F0F0
+    }
+
+    .CtxtMenu_MenuClose span {
+      display: block;
+      background-color: #AAA;
+      border: 1.5px solid;
+      border-radius: 18px;
+      -webkit-border-radius: 18px;
+      /* Safari and Chrome */
+      -moz-border-radius: 18px;
+      /* Firefox */
+      -khtml-border-radius: 18px;
+      /* Konqueror */
+      line-height: 0;
+      padding: 8px 0 6px
+        /* may need to be browser-specific */
+    }
+
+    .CtxtMenu_MenuClose:hover {
+      color: white !important;
+      border: 2px solid #CCC !important
+    }
+
+    .CtxtMenu_MenuClose:hover span {
+      background-color: #CCC !important
+    }
+
+    .CtxtMenu_MenuClose:hover:focus {
+      outline: none
+    }
+  </style>
+  <style type="text/css">
+    .CtxtMenu_Menu {
+      position: absolute;
+      background-color: white;
+      color: black;
+      width: auto;
+      padding: 5px 0px;
+      border: 1px solid #CCCCCC;
+      margin: 0;
+      cursor: default;
+      font: menu;
+      text-align: left;
+      text-indent: 0;
+      text-transform: none;
+      line-height: normal;
+      letter-spacing: normal;
+      word-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      float: none;
+      z-index: 201;
+      border-radius: 5px;
+      /* Opera 10.5 and IE9 */
+      -webkit-border-radius: 5px;
+      /* Safari and Chrome */
+      -moz-border-radius: 5px;
+      /* Firefox */
+      -khtml-border-radius: 5px;
+      /* Konqueror */
+      box-shadow: 0px 10px 20px #808080;
+      /* Opera 10.5 and IE9 */
+      -webkit-box-shadow: 0px 10px 20px #808080;
+      /* Safari 3 & Chrome */
+      -moz-box-shadow: 0px 10px 20px #808080;
+      /* Forefox 3.5 */
+      -khtml-box-shadow: 0px 10px 20px #808080;
+      /* Konqueror */
+    }
+
+    .CtxtMenu_MenuItem {
+      padding: 1px 2em;
+      background: transparent;
+    }
+
+    .CtxtMenu_MenuArrow {
+      position: absolute;
+      right: .5em;
+      padding-top: .25em;
+      color: #666666;
+      font-family: null;
+      font-size: .75em
+    }
+
+    .CtxtMenu_MenuActive .CtxtMenu_MenuArrow {
+      color: white
+    }
+
+    .CtxtMenu_MenuArrow.CtxtMenu_RTL {
+      left: .5em;
+      right: auto
+    }
+
+    .CtxtMenu_MenuCheck {
+      position: absolute;
+      left: .7em;
+      font-family: null
+    }
+
+    .CtxtMenu_MenuCheck.CtxtMenu_RTL {
+      right: .7em;
+      left: auto
+    }
+
+    .CtxtMenu_MenuRadioCheck {
+      position: absolute;
+      left: .7em;
+    }
+
+    .CtxtMenu_MenuRadioCheck.CtxtMenu_RTL {
+      right: .7em;
+      left: auto
+    }
+
+    .CtxtMenu_MenuInputBox {
+      padding-left: 1em;
+      right: .5em;
+      color: #666666;
+      font-family: null;
+    }
+
+    .CtxtMenu_MenuInputBox.CtxtMenu_RTL {
+      left: .1em;
+    }
+
+    .CtxtMenu_MenuComboBox {
+      left: .1em;
+      padding-bottom: .5em;
+    }
+
+    .CtxtMenu_MenuSlider {
+      left: .1em;
+    }
+
+    .CtxtMenu_SliderValue {
+      position: absolute;
+      right: .1em;
+      padding-top: .25em;
+      color: #333333;
+      font-size: .75em
+    }
+
+    .CtxtMenu_SliderBar {
+      outline: none;
+      background: #d3d3d3
+    }
+
+    .CtxtMenu_MenuLabel {
+      padding: 1px 2em 3px 1.33em;
+      font-style: italic
+    }
+
+    .CtxtMenu_MenuRule {
+      border-top: 1px solid #DDDDDD;
+      margin: 4px 3px;
+    }
+
+    .CtxtMenu_MenuDisabled {
+      color: GrayText
+    }
+
+    .CtxtMenu_MenuActive {
+      background-color: #606872;
+      color: white;
+    }
+
+    .CtxtMenu_MenuDisabled:focus {
+      background-color: #E8E8E8
+    }
+
+    .CtxtMenu_MenuLabel:focus {
+      background-color: #E8E8E8
+    }
+
+    .CtxtMenu_ContextMenu:focus {
+      outline: none
+    }
+
+    .CtxtMenu_ContextMenu .CtxtMenu_MenuItem:focus {
+      outline: none
+    }
+
+    .CtxtMenu_SelectionMenu {
+      position: relative;
+      float: left;
+      border-bottom: none;
+      -webkit-box-shadow: none;
+      -webkit-border-radius: 0px;
+    }
+
+    .CtxtMenu_SelectionItem {
+      padding-right: 1em;
+    }
+
+    .CtxtMenu_Selection {
+      right: 40%;
+      width: 50%;
+    }
+
+    .CtxtMenu_SelectionBox {
+      padding: 0em;
+      max-height: 20em;
+      max-width: none;
+      background-color: #FFFFFF;
+    }
+
+    .CtxtMenu_SelectionDivider {
+      clear: both;
+      border-top: 2px solid #000000;
+    }
+
+    .CtxtMenu_Menu .CtxtMenu_MenuClose {
+      top: -10px;
+      left: -10px
+    }
+  </style>
+</head>
+
+<body style="margin-bottom: 182.562px;" inmaintabuse="1">
+  <div class="masthead">
+    <div class="masthead__inner-wrap">
+      <div class="masthead__menu">
+        <nav id="site-nav" class="greedy-nav"> <button class="hidden" count="0">
+            <div class="navicon"></div>
+          </button>
+          <ul class="visible-links">
+            <li class="masthead__menu-item masthead__menu-item--lg"><a href="./index.html">Zhang, Haiyang
+                (章海洋)</a></li>
+            <li class="masthead__menu-item"><a href="./publication.html">📖 Publications</a></li>
+
+          </ul>
+          <ul class="hidden-links hidden"></ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div id="main" role="main">
+    <div class="sidebar sticky">
+      <div itemscope="" itemtype="http://schema.org/Person">
+        <div class="author__avatar"> 
+          <img src="./root/image/head_portrait.jpg"
+               class="author__avatar" alt="Haiyang Zhang">
+        </div>
+        <div class="author__content">
+          <h3 class="author__name">Haiyang Zhang</h3>
+          <p class="author__bio">Master student</p>
+        </div>
+        <div class="author__urls-wrapper"> 
+          <button class="btn btn--inverse">Follow</button>
+          <ul class="author__urls social-icons"> 
+            <!-- Font Awesome icons / Biographic information -->
+            <li class="author__desktop"><i class="fas fa-location-dot icon-pad-right" aria-hidden="true"></i> Tianjin, China</li>
+            <li class="author__desktop"><i class="fas fa-university icon-pad-right" aria-hidden="true"></i> Tianjin University of Technology</li>
+            <li><a href="mailto:zshy@stud.tjut.edu.cn"><i class="fas fa-envelope icon-pad-right" aria-hidden="true"></i> Email</a></li>
+            <!-- Font Awesome and Academicons icons / Academic websites -->
+            <!-- <li><a href="https://arxiv.org/a/wu_y_17"><i class="ai ai-arxiv ai-fw icon-pad-right"></i> arXiv</a></li> -->
+            <!-- <li><a href="https://scholar.google.com/citations?user=LEFHW44AAAAJ"><i class="ai ai-google-scholar icon-pad-right"></i> Google Scholar</a></li> -->
+            <li><a href="https://github.com/zhyblue424"><i class="fab fa-github icon-pad-right" aria-hidden="true"></i> Github</a></li>
+            <li><a href="https://openreview.net/profile?id=~Haiyang_Zhang6"><i class="fas fa-external-link-alt icon-pad-right" aria-hidden="true"></i> OpenReview</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <article class="page" itemscope="" itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="headline" content="Welcome to Haiyang Zhang's homepage!">
+      <div class="page__inner-wrap">
+        <header>
+          <h1 class="page__title" itemprop="headline">Welcome to Haiyang Zhang's homepage!</h1>
+        </header>
+        <section class="page__content" itemprop="text"> <!-- 主页上只展示客观成果，主观的东西和需要展开讲的东西放到其他页面 -->
+          <hr>
+          <h1 id="about">About</h1>
+          <p><strong>Haiyang Zhang</strong> is a master student in Computer science and Technology at Tianjin University of Technology.
+            His thesis advisor is <a href="https://scholar.google.com/citations?user=8KhrWbYAAAAJ&hl=zh-CN&oi=sra"
+              title="Associate Prof. Lu Yu&#39; homepage" target="_blank">Associate Prof. Lu Yu</a>. His main research
+            interests lie in zero-shot adversarial robustness, with the goal of developing models that can maintain performance against unseen adversarial examples without task-specific training data.</p>
+          <h1 id="education">🎓 Education</h1>
+          <ul>
+            <li>2023.09 ~ Present: <a href="https://cs.tjut.edu.cn/index.htm" target="_blank">School of Computer Science and Engineering</a>, <a href="https://www.tjut.edu.cn/" target="_blank">Tianjin University of Technology</a>
+              <ul>
+                <li>Master student in <em>Computer science and Technology</em> (Advisor: <a
+                    href="https://scholar.google.com/citations?user=8KhrWbYAAAAJ&hl=zh-CN&oi=sra" title="Associate Prof. Lu Yu&#39; homepage"
+                    target="_blank">Associate Prof. Lu Yu</a>)</li>
+              </ul>
+            </li>
+
+          </ul>
+          <h1 id="news">📰 News</h1>
+          <ul>
+            <li>2024.09: 🎉 🎉 A paper is accepted by the Thirty-Eighth Annual Conference on Neural Information Processing Systems (NeurIPS 2024, CCF-A).</li>
+          </ul>
+
+          <h1 id="honors-and-awards">🏆 Honors and Awards</h1>
+          <ul>
+            <li>2024.12:  Third Prize, Tianjin University of Technology scholarship</li>
+            <li>2023.12: Tianjin University of Technology freshman scholarship</li>
+          </ul>
+          
+        </section>
+        <footer class="page__meta"></footer>
+      </div>
+    </article>
+  </div>
+</body>
+</html>
